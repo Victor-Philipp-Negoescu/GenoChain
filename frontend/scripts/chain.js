@@ -26,24 +26,38 @@ function register() {
     var vorname = form.vorname.value;
     var nachname = form.nachname.value;
     var strasse = form.anschrift.value;
-    var hausnummer = "";
-    var plz = form.plz.value;
-    var ort = form.ort.value;
+    var ort = form.plz.value + " " + form.ort.value;
     var email = form.email.value;
     var username = form.nickname.value;
 
     Geno
-        .addMitglied(vorname, nachname, strasse, hausnummer, plz, ort, email, username,
+        .addMitglied(vorname, nachname, strasse, ort, email, username,
         (error, result) => {
-            console.error(error);
+            if (error) {
+                console.error(error);
+                return;
+            }
             console.log(result);
         });
 }
 
 function listMembers() {
-    Geno.getMitglieder({}, (error, result) => {
-        console.error(error);
-        console.log(result);
+    Geno.getMitgliederCount({}, (error, result) => {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log(result.s, 'Mitglieder');
+
+        for (var i = 0; i < result.s; ++i) {
+            Geno.mitglieder(i, (error, result) => {
+                if (error) {
+                    console.error(error);
+                    return;
+                }
+                console.log(result);
+            });
+        }
     });
 }
 
@@ -64,14 +78,6 @@ $(document).ready(() => {
                         },
                         {
                             "name": "_strasse",
-                            "type": "string"
-                        },
-                        {
-                            "name": "_hausnummer",
-                            "type": "string"
-                        },
-                        {
-                            "name": "_plz",
                             "type": "string"
                         },
                         {
@@ -195,6 +201,44 @@ $(document).ready(() => {
                     "type": "function"
                 },
                 {
+                    "constant": false,
+                    "inputs": [
+                        {
+                            "name": "sender",
+                            "type": "address"
+                        },
+                        {
+                            "name": "recipient",
+                            "type": "address"
+                        },
+                        {
+                            "name": "amount",
+                            "type": "uint256"
+                        }
+                    ],
+                    "name": "transferFrom",
+                    "outputs": [
+                        {
+                            "name": "",
+                            "type": "bool"
+                        }
+                    ],
+                    "payable": false,
+                    "stateMutability": "nonpayable",
+                    "type": "function"
+                },
+                {
+                    "inputs": [
+                        {
+                            "name": "_costOfToken",
+                            "type": "uint256"
+                        }
+                    ],
+                    "payable": false,
+                    "stateMutability": "nonpayable",
+                    "type": "constructor"
+                },
+                {
                     "anonymous": false,
                     "inputs": [
                         {
@@ -237,44 +281,6 @@ $(document).ready(() => {
                     ],
                     "name": "Approval",
                     "type": "event"
-                },
-                {
-                    "constant": false,
-                    "inputs": [
-                        {
-                            "name": "sender",
-                            "type": "address"
-                        },
-                        {
-                            "name": "recipient",
-                            "type": "address"
-                        },
-                        {
-                            "name": "amount",
-                            "type": "uint256"
-                        }
-                    ],
-                    "name": "transferFrom",
-                    "outputs": [
-                        {
-                            "name": "",
-                            "type": "bool"
-                        }
-                    ],
-                    "payable": false,
-                    "stateMutability": "nonpayable",
-                    "type": "function"
-                },
-                {
-                    "inputs": [
-                        {
-                            "name": "_costOfToken",
-                            "type": "uint256"
-                        }
-                    ],
-                    "payable": false,
-                    "stateMutability": "nonpayable",
-                    "type": "constructor"
                 },
                 {
                     "constant": true,
@@ -321,49 +327,54 @@ $(document).ready(() => {
                 {
                     "constant": true,
                     "inputs": [],
-                    "name": "getMitglieder",
+                    "name": "getMitgliederCount",
                     "outputs": [
                         {
-                            "components": [
-                                {
-                                    "name": "vorname",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "nachname",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "strasse",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "hausnummer",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "plz",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "ort",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "email",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "username",
-                                    "type": "string"
-                                },
-                                {
-                                    "name": "isValid",
-                                    "type": "bool"
-                                }
-                            ],
                             "name": "",
-                            "type": "tuple[]"
+                            "type": "uint256"
+                        }
+                    ],
+                    "payable": false,
+                    "stateMutability": "view",
+                    "type": "function"
+                },
+                {
+                    "constant": true,
+                    "inputs": [
+                        {
+                            "name": "",
+                            "type": "uint256"
+                        }
+                    ],
+                    "name": "mitglieder",
+                    "outputs": [
+                        {
+                            "name": "vorname",
+                            "type": "string"
+                        },
+                        {
+                            "name": "nachname",
+                            "type": "string"
+                        },
+                        {
+                            "name": "strasse",
+                            "type": "string"
+                        },
+                        {
+                            "name": "ort",
+                            "type": "string"
+                        },
+                        {
+                            "name": "email",
+                            "type": "string"
+                        },
+                        {
+                            "name": "username",
+                            "type": "string"
+                        },
+                        {
+                            "name": "isValid",
+                            "type": "bool"
                         }
                     ],
                     "payable": false,
@@ -386,7 +397,7 @@ $(document).ready(() => {
                 }
             ]
         );
-        Geno = GenoContract.at('0x8936b1448425553a34aca7a9fcc7e3693cf66c73');
+        Geno = GenoContract.at('0x8e66c14752f0be8204d88cf57b83dc2670bb1a47');
         listMembers();
     });
 });
