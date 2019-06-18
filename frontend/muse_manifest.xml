@@ -1,0 +1,60 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="genochain.com" resolutions="1x" timestamp="1560786111902">
+  <folder name="css">
+    <file name="site_global.css" crc="444006867"/>
+    <file name="master_a-musters.css" crc="3988303468" ref="startseite:onboarding:index:mein-konto:anmelden:dashboard"/>
+    <file name="startseite.css" crc="3803862281" ref="startseite"/>
+    <file name="onboarding.css" crc="288448337" ref="onboarding"/>
+    <file name="index.css" crc="4269532622" ref="index"/>
+    <file name="mein-konto.css" crc="284408878" ref="mein-konto"/>
+    <file name="anmelden.css" crc="406600117" ref="anmelden"/>
+    <file name="dashboard.css" crc="3980262659" ref="dashboard"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="museutils.js" crc="340535759" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="whatinput.js" crc="86476730" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="museconfig.js" crc="310584261" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="require.js" crc="7928878" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="onboarding"/>
+    <file name="webpro.js" crc="4059564322" ref="onboarding:mein-konto"/>
+    <file name="form_check.php" crc="4020933626" ref="onboarding"/>
+    <file name="form_throttle.php" crc="4259590256" ref="onboarding"/>
+    <file name="form_process.php" crc="37464564" ref="onboarding"/>
+    <file name="form-u786.php" crc="306912994" ref="onboarding"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="mein-konto"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="mein-konto"/>
+    <file name="touchswipe.js" crc="4075097462" ref="mein-konto"/>
+  </folder>
+  <folder name="images">
+    <file name="checkboxunchecked.jpg" crc="495023700" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="checkboxchecked.jpg" crc="477278992" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="onboarding">
+      <caption webpage="onboarding" alt=""/>
+    </file>
+    <file name="arrow.png" crc="4100684742" seo="true" ref="dashboard">
+      <caption webpage="dashboard" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="504904804" seo="true" mt="1560785703260" redirect="true"/>
+  <file name="startseite.html" crc="278600735" seo="true" mt="1560785668938" redirect="true"/>
+  <file name="anmelden.html" crc="4231860817" seo="true" mt="1560785784441" redirect="true"/>
+  <file name="onboarding.html" crc="4243729085" seo="true" mt="1560785906410" redirect="true"/>
+  <file name="dashboard.html" crc="4148210657" seo="true" mt="1560785879807" redirect="true"/>
+  <file name="mein-konto.html" crc="234723135" seo="true" mt="1560785998726" redirect="true"/>
+</manifest>
