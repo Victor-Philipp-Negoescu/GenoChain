@@ -2,41 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://genochain.com/index.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://genochain.com/startseite.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/pngkeycom-family-symbol-png-4237627.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/door%20final.gif</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://genochain.com/anmelden.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain1.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://genochain.com/onboarding.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://genochain.com/dashboard.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
     <image:image>
       <image:loc>http://genochain.com/images/arrow.png</image:loc>
     </image:image>
   </url>
   <url>
     <loc>http://genochain.com/mein-konto.html</loc>
-    <lastmod>2019-06-17</lastmod>
+    <lastmod>2019-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://genochain.com/genofund.html</loc>
+    <lastmod>2019-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/restaurant.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/bike.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://genochain.com/images/children-playing-334531_1280.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://genochain.com/deinprojekt.html</loc>
+    <lastmod>2019-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://genochain.com/images/logo%20genochain%20transparent.png</image:loc>
+    </image:image>
   </url>
 </urlset>

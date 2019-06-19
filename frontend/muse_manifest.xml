@@ -1,34 +1,56 @@
-<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="genochain.com" resolutions="1x" timestamp="1560786111902">
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="genochain.com" resolutions="1x" timestamp="1560857444897">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="master_a-musters.css" crc="3988303468" ref="startseite:onboarding:index:mein-konto:anmelden:dashboard"/>
-    <file name="startseite.css" crc="3803862281" ref="startseite"/>
-    <file name="onboarding.css" crc="288448337" ref="onboarding"/>
-    <file name="index.css" crc="4269532622" ref="index"/>
-    <file name="mein-konto.css" crc="284408878" ref="mein-konto"/>
-    <file name="anmelden.css" crc="406600117" ref="anmelden"/>
-    <file name="dashboard.css" crc="3980262659" ref="dashboard"/>
+    <file name="master_a-musters.css" crc="448344810" ref="genofund:index:mein-konto:anmelden:deinprojekt:startseite:onboarding:dashboard"/>
+    <file name="genofund.css" crc="4008526480" ref="genofund"/>
+    <file name="index.css" crc="242499698" ref="index"/>
+    <file name="mein-konto.css" crc="4068436284" ref="mein-konto"/>
+    <file name="anmelden.css" crc="4272535804" ref="anmelden"/>
+    <file name="deinprojekt.css" crc="363519732" ref="deinprojekt"/>
+    <file name="startseite.css" crc="3879150003" ref="startseite"/>
+    <file name="onboarding.css" crc="3971305881" ref="onboarding"/>
+    <file name="dashboard.css" crc="4237810009" ref="dashboard"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="museutils.js" crc="340535759" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="whatinput.js" crc="86476730" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="museconfig.js" crc="310584261" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="jquery.musemenu.js" crc="510910590" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="jquery.watch.js" crc="51536988" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="html5shiv.js" crc="4241844378" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="require.js" crc="7928878" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="onboarding"/>
-    <file name="webpro.js" crc="4059564322" ref="onboarding:mein-konto"/>
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="museutils.js" crc="340535759" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="whatinput.js" crc="86476730" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="museconfig.js" crc="310584261" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="require.js" crc="7928878" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="onboarding:deinprojekt"/>
+    <file name="webpro.js" crc="4059564322" ref="onboarding:mein-konto:deinprojekt"/>
     <file name="form_check.php" crc="4020933626" ref="onboarding"/>
     <file name="form_throttle.php" crc="4259590256" ref="onboarding"/>
     <file name="form_process.php" crc="37464564" ref="onboarding"/>
-    <file name="form-u786.php" crc="306912994" ref="onboarding"/>
+    <file name="form-u786.php" crc="384787835" ref="onboarding"/>
     <file name="musewpslideshow.js" crc="3862962738" ref="mein-konto"/>
     <file name="jquery.museoverlay.js" crc="4147669564" ref="mein-konto"/>
     <file name="touchswipe.js" crc="4075097462" ref="mein-konto"/>
+    <file name="form-u1856.php" crc="420634967" ref="deinprojekt"/>
   </folder>
   <folder name="images">
+    <file name="logo genochain transparent.png" crc="4140939935" seo="true" ref="index:startseite:anmelden:onboarding:dashboard:mein-konto:genofund:deinprojekt">
+      <caption webpage="mein-konto" alt=""/>
+      <caption webpage="genofund" alt=""/>
+      <caption webpage="deinprojekt" alt=""/>
+      <caption webpage="startseite" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="onboarding" alt=""/>
+      <caption webpage="anmelden" alt=""/>
+      <caption webpage="dashboard" alt=""/>
+    </file>
+    <file name="pngkeycom-family-symbol-png-4237627.png" crc="144566002" seo="true" ref="startseite">
+      <caption webpage="startseite" alt=""/>
+    </file>
+    <file name="door final.gif" crc="229065650" seo="true" ref="startseite">
+      <caption webpage="startseite" alt=""/>
+    </file>
+    <file name="logo genochain1.jpg" crc="335750568" seo="true" ref="anmelden">
+      <caption webpage="anmelden" alt=""/>
+    </file>
     <file name="checkboxunchecked.jpg" crc="495023700" ref="onboarding">
       <caption webpage="onboarding" alt=""/>
     </file>
@@ -50,11 +72,40 @@
     <file name="arrow.png" crc="4100684742" seo="true" ref="dashboard">
       <caption webpage="dashboard" alt=""/>
     </file>
+    <file name="restaurant.jpg" crc="76160148" seo="true" ref="genofund">
+      <caption webpage="genofund" alt=""/>
+    </file>
+    <file name="bike.jpg" crc="4056036384" seo="true" ref="genofund">
+      <caption webpage="genofund" alt=""/>
+    </file>
+    <file name="children-playing-334531_1280.jpg" crc="3846627074" seo="true" ref="genofund">
+      <caption webpage="genofund" alt=""/>
+    </file>
+    <file name="radiobuttonunchecked.png" crc="3976871150" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
+    <file name="radiobuttonuncheckedrollover.png" crc="4276313674" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
+    <file name="radiobuttonuncheckedmousedown.png" crc="54863585" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
+    <file name="radiobuttonchecked.png" crc="4193302265" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
+    <file name="radiobuttoncheckedrollover.png" crc="88928956" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
+    <file name="radiobuttoncheckedmousedown.png" crc="4280357799" ref="deinprojekt">
+      <caption webpage="deinprojekt" alt=""/>
+    </file>
   </folder>
-  <file name="index.html" crc="504904804" seo="true" mt="1560785703260" redirect="true"/>
-  <file name="startseite.html" crc="278600735" seo="true" mt="1560785668938" redirect="true"/>
-  <file name="anmelden.html" crc="4231860817" seo="true" mt="1560785784441" redirect="true"/>
-  <file name="onboarding.html" crc="4243729085" seo="true" mt="1560785906410" redirect="true"/>
-  <file name="dashboard.html" crc="4148210657" seo="true" mt="1560785879807" redirect="true"/>
-  <file name="mein-konto.html" crc="234723135" seo="true" mt="1560785998726" redirect="true"/>
+  <file name="index.html" crc="4193967965" seo="true" mt="1560846179227" redirect="true"/>
+  <file name="startseite.html" crc="310049273" seo="true" mt="1560856165564" redirect="true"/>
+  <file name="anmelden.html" crc="3967015598" seo="true" mt="1560846179212" redirect="true"/>
+  <file name="onboarding.html" crc="99673382" seo="true" mt="1560846179212" redirect="true"/>
+  <file name="dashboard.html" crc="3770244390" seo="true" mt="1560848672138" redirect="true"/>
+  <file name="mein-konto.html" crc="119513039" seo="true" mt="1560846179212" redirect="true"/>
+  <file name="genofund.html" crc="216849270" seo="true" mt="1560849645893" redirect="true"/>
+  <file name="deinprojekt.html" crc="171478061" seo="true" mt="1560857415443" redirect="true"/>
 </manifest>

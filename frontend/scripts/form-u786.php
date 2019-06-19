@@ -40,16 +40,6 @@ $form = array(
 				'required' => 'Feld „Vorname“ ist erforderlich.'
 			)
 		),
-		'Email' => array(
-			'order' => 4,
-			'type' => 'email',
-			'label' => 'Nachname',
-			'required' => true,
-			'errors' => array(
-				'required' => 'Feld „Nachname“ ist erforderlich.',
-				'format' => 'Die E-Mail-Adresse in Feld „Nachname“ ist ungültig.'
-			)
-		),
 		'custom_U954' => array(
 			'order' => 5,
 			'type' => 'string',
@@ -120,6 +110,15 @@ $form = array(
 			'required' => true,
 			'errors' => array(
 				'required' => 'Feld „Email“ ist erforderlich.'
+			)
+		),
+		'custom_U1454' => array(
+			'order' => 4,
+			'type' => 'string',
+			'label' => 'Nachname',
+			'required' => true,
+			'errors' => array(
+				'required' => 'Feld „Nachname“ ist erforderlich.'
 			)
 		)
 	)
