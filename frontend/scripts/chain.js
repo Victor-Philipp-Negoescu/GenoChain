@@ -69,6 +69,39 @@ function doIfMember(wait, onTrue, onFalse) {
     })
 }
 
+function getAnteile(callback) {
+    GENO.balanceOf(ADDRESS, (error, result) => {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log('Balance:', result);
+        callback(result.c[0]);
+    });
+}
+
+function getTokenLimit(callback) {
+    GENO.tokenLimit({}, (error, result) => {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log('Total supply:', result);
+        callback(result.c[0]);
+    });
+}
+
+function getTotalSupply(callback) {
+    GENO.totalSupply({}, (error, result) => {
+        if (error) {
+            console.error(error);
+            return;
+        }
+        console.log('Total supply:', result);
+        callback(result.c[0]);
+    });
+}
+
 $(document).ready(() => {
     doIfUnlocked((account) => {
         const GenoContract = web3.eth.contract([
@@ -532,7 +565,7 @@ $(document).ready(() => {
                 "type": "function"
             }
         ]);
-        GENO = GenoContract.at('0xe553544c7595f750dd5ed0b7ef0e61788d79a8f2');
+        GENO = GenoContract.at('0x154a7a4798811a7888f8ab98e203ed8046cd2ada');
         ADDRESS = account;
         console.log('address:', ADDRESS);
     });

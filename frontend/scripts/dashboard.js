@@ -1,22 +1,3 @@
-function getAnteile(callback) {
-    GENO.totalSupply({}, (error, result) => {
-        if (error) {
-            console.error(error);
-            return;
-        }
-        console.log('Total supply:', result);
-    });
-
-    GENO.balanceOf(ADDRESS, (error, result) => {
-        if (error) {
-            console.error(error);
-            return;
-        }
-        console.log('Balance:', result);
-        callback(result.c[0]);
-    });
-}
-
 function buyToken() {
     var weiValue = web3.toWei(0.01, 'ether');
     GENO.buyToken({
@@ -40,30 +21,34 @@ function sellToken() {
 
 var chart = null;
 function loadAnteile() {
-    getAnteile((count) => {
-        const avail = 10 - count;
-        $('#anteil-count').text(count);
-        $('#anteil-available').text(avail);
-        $('#anteil-betrag').text(count * 50);
-
-        var data = google.visualization.arrayToDataTable([
-            ['Typ', 'Anzahl'],
-            ['Gezeichnet', count],
-            ['Verfügbar', avail]
-          ]);
-      
-          var options = {
-            //title: 'My Daily Activities',
-            pieHole: 0.7,
-            colors: ['#FF6711', '#0066B3'],
-            legend: {position: 'none'},
-            pieSliceText: "none"
-          };
-      
-          if (chart == null) {
-            chart = new google.visualization.PieChart(document.getElementById('anteile-chart'));
-          }
-          chart.draw(data, options);
+    getTokenLimit((limit) => {
+        getTotalSupply((supply) => {
+            getAnteile((count) => {
+                const avail = Math.max(0, limit - supply);
+                $('#anteil-count').text(count);
+                $('#anteil-available').text(avail);
+                $('#anteil-betrag').text(count * 50);
+        
+                var data = google.visualization.arrayToDataTable([
+                    ['Typ', 'Anzahl'],
+                    ['Gezeichnet', count],
+                    ['Verfügbar', avail]
+                ]);
+            
+                var options = {
+                    //title: 'My Daily Activities',
+                    pieHole: 0.7,
+                    colors: ['#FF6711', '#0066B3'],
+                    legend: {position: 'none'},
+                    pieSliceText: "none"
+                };
+            
+                if (chart == null) {
+                    chart = new google.visualization.PieChart(document.getElementById('anteile-chart'));
+                }
+                chart.draw(data, options);
+            }); 
+        });
     });
 }
 
